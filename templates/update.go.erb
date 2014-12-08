@@ -1,0 +1,52 @@
+func (obj *<%= @klass.name %>) Save() (error) {
+  endpoint := fmt.Sprintf("<%= endpoint %>/%d.json", obj.Id)
+  method := "PUT"
+  expectedStatus := 201
+
+  if obj.Id == 0 {
+    endpoint = fmt.Sprintf("<%= endpoint %>.json")
+    method = "POST"
+    expectedStatus = 201
+  }
+
+  body := map[string]*<%= @klass.name %>{}
+  body["<%= @klass.name.underscore %>"] = obj
+
+  buf := &bytes.Buffer{}
+  err := json.NewEncoder(buf).Encode(body)
+
+  if err != nil {
+    return err
+  }
+
+  res, status, err := obj.api.request(endpoint, method, nil, buf)
+
+  if err != nil {
+    return err
+  }
+
+  if status != expectedStatus {
+    r := errorResponse{}
+    err = json.NewDecoder(res).Decode(&r)
+    if err == nil {
+      return fmt.Errorf("Status %d: %v", status, r.Errors)
+    } else {
+      return fmt.Errorf("Status %d, and error parsing body: %s", status, err)
+    }
+  }
+
+  r := map[string]<%= @klass.name %>{}
+  err = json.NewDecoder(res).Decode(&r)
+
+	if err != nil {
+		return err
+  }
+
+  fmt.Printf("things are: %v\n\n", r)
+
+  *obj = r["<%= @klass.name.underscore %>"]
+
+  fmt.Printf("things are: %v\n\n", res)
+
+  return nil
+}
