@@ -42,11 +42,7 @@ func (obj *<%= @klass.name %>) Save() (error) {
 		return err
   }
 
-  fmt.Printf("things are: %v\n\n", r)
-
   *obj = r["<%= @klass.name.underscore %>"]
-
-  fmt.Printf("things are: %v\n\n", res)
 
   return nil
 }

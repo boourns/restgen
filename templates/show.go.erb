@@ -14,8 +14,6 @@ func (api *API) <%= @klass.name %>(id int64) (*<%= @klass.name %>, error) {
   r := map[string]<%= @klass.name %>{}
   err = json.NewDecoder(res).Decode(&r)
 
-  fmt.Printf("things are: %v\n\n", r)
-
   result := r["<%= @klass.name.underscore %>"]
 
 	if err != nil {

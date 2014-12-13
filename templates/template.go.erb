@@ -1,16 +1,21 @@
-package shopify
+package <%= package %>
 
+<% if imports.any? %>
 import (
   <% imports.each do |i| %>
     "<%= i %>"
   <% end %>
 )
+<% end %>
 
 type <%= @name %> struct {
   <% @properties.each do |p| %>
     <%= p.name.camelize %> <%= p.go_type %> `json:"<%= p.name %>"`
   <% end %>
-  api *API
+
+  <% if @actions.any? %>
+    api *API
+  <% end %>
 }
 
 <% @actions.each do |action| %>
