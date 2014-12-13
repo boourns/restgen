@@ -1,0 +1,411 @@
+[
+  {
+    "name": "ApplicationCharge",
+    "endpoint": "application_charges",
+    "actions": [
+      "create",
+      "show",
+      "index",
+      "activate"
+    ]
+  },
+  {
+    "name": "Article",
+    "endpoint": "articles",
+    "actions": [
+      "index",
+      "count",
+      "show",
+      "create",
+      "update",
+      "authors",
+      "tags",
+      "destroy"
+    ]
+  },
+  {
+    "name": "Asset",
+    "endpoint": "assets",
+    "actions": [
+      "index",
+      "show",
+      "update",
+      "destroy"
+    ]
+  },
+  {
+    "name": "Blog",
+    "endpoint": "blogs",
+    "actions": [
+      "index",
+      "count",
+      "show",
+      "create",
+      "update",
+      "destroy"
+    ]
+  },
+  {
+    "name": "CarrierService",
+    "endpoint": "carrier_services",
+    "actions": [
+      "create",
+      "update",
+      "index",
+      "show",
+      "destroy"
+    ]
+  },
+  {
+    "name": "Checkout",
+    "endpoint": "checkouts",
+    "actions": [
+      "count",
+      "index"
+    ]
+  },
+  {
+    "name": "Collect",
+    "endpoint": "collects",
+    "actions": [
+      "create",
+      "destroy",
+      "index",
+      "count",
+      "show"
+    ]
+  },
+  {
+    "name": "Comment",
+    "endpoint": "comments",
+    "actions": [
+      "index",
+      "count",
+      "show",
+      "create",
+      "update",
+      "spam",
+      "not_spam",
+      "approve",
+      "remove",
+      "restore"
+    ]
+  },
+  {
+    "name": "Country",
+    "endpoint": "countries",
+    "actions": [
+      "index",
+      "count",
+      "show",
+      "create",
+      "update",
+      "destroy"
+    ]
+  },
+  {
+    "name": "CustomCollection",
+    "endpoint": "custom_collections",
+    "actions": [
+      "index",
+      "count",
+      "show",
+      "create",
+      "update",
+      "destroy"
+    ]
+  },
+  {
+    "name": "CustomerAddress",
+    "endpoint": "customer_addresses",
+    "actions": [
+      "index",
+      "show",
+      "create",
+      "update",
+      "destroy",
+      "set",
+      "default"
+    ]
+  },
+  {
+    "name": "Customer",
+    "endpoint": "customers",
+    "actions": [
+      "index",
+      "search",
+      "show",
+      "create",
+      "update",
+      "destroy",
+      "count",
+      "orders"
+    ]
+  },
+  {
+    "name": "CustomerGroup",
+    "endpoint": "customer_groups",
+    "actions": [
+      "index",
+      "count",
+      "show",
+      "other",
+      "create",
+      "update",
+      "destroy"
+    ]
+  },
+  {
+    "name": "CustomerSavedSearch",
+    "endpoint": "customer_saved_searches",
+    "actions": [
+      "index",
+      "count",
+      "show",
+      "other",
+      "create",
+      "update",
+      "destroy"
+    ]
+  },
+  {
+    "name": "Event",
+    "endpoint": "events",
+    "actions": [
+      "index",
+      "show",
+      "count"
+    ]
+  },
+  {
+    "name": "Fulfillment",
+    "endpoint": "fulfillments",
+    "actions": [
+      "index",
+      "count",
+      "show",
+      "create",
+      "update",
+      "complete",
+      "cancel"
+    ]
+  },
+  {
+    "name": "FulfillmentService",
+    "endpoint": "fulfillment_services",
+    "actions": [
+      "index",
+      "create",
+      "show",
+      "update",
+      "destroy"
+    ]
+  },
+  {
+    "name": "Location",
+    "endpoint": "locations",
+    "actions": [
+      "index",
+      "show"
+    ]
+  },
+  {
+    "name": "Metafield",
+    "endpoint": "metafields",
+    "actions": [
+      "index",
+      "count",
+      "show",
+      "create",
+      "update",
+      "destroy"
+    ]
+  },
+  {
+    "name": "OrderRisks",
+    "endpoint": "order_risks",
+    "actions": [
+      "create",
+      "index",
+      "show",
+      "update",
+      "destroy"
+    ]
+  },
+  {
+    "name": "Order",
+    "endpoint": "orders",
+    "actions": [
+      "index",
+      "show",
+      "count",
+      "close",
+      "open",
+      "cancel",
+      "create",
+      "update",
+      "destroy"
+    ]
+  },
+  {
+    "name": "Page",
+    "endpoint": "pages",
+    "actions": [
+      "index",
+      "count",
+      "show",
+      "create",
+      "update",
+      "destroy"
+    ]
+  },
+  {
+    "name": "Product",
+    "endpoint": "products",
+    "actions": [
+      "index",
+      "count",
+      "show",
+      "create",
+      "update",
+      "destroy"
+    ]
+  },
+  {
+    "name": "ProductImage",
+    "endpoint": "product_images",
+    "actions": [
+      "index",
+      "count",
+      "show",
+      "create",
+      "update",
+      "destroy"
+    ]
+  },
+  {
+    "name": "ProductVariant",
+    "endpoint": "product_variants",
+    "actions": [
+      "index",
+      "count",
+      "show",
+      "create",
+      "update",
+      "destroy"
+    ]
+  },
+  {
+    "name": "Province",
+    "endpoint": "provinces",
+    "actions": [
+      "index",
+      "count",
+      "show",
+      "update"
+    ]
+  },
+  {
+    "name": "RecurringApplicationCharge",
+    "endpoint": "recurring_application_charges",
+    "actions": [
+      "create",
+      "show",
+      "index",
+      "activate",
+      "destroy"
+    ]
+  },
+  {
+    "name": "Redirect",
+    "endpoint": "redirects",
+    "actions": [
+      "index",
+      "count",
+      "show",
+      "create",
+      "update",
+      "destroy"
+    ]
+  },
+  {
+    "name": "Refund",
+    "endpoint": "refunds",
+    "actions": [
+      "show"
+    ]
+  },
+  {
+    "name": "ScriptTag",
+    "endpoint": "script_tags",
+    "actions": [
+      "index",
+      "count",
+      "show",
+      "create",
+      "update",
+      "destroy"
+    ]
+  },
+  {
+    "name": "Shop",
+    "endpoint": "shops",
+    "actions": [
+      "show"
+    ]
+  },
+  {
+    "name": "SmartCollection",
+    "endpoint": "smart_collections",
+    "actions": [
+      "index",
+      "count",
+      "show",
+      "create",
+      "update",
+      "order",
+      "destroy"
+    ]
+  },
+  {
+    "name": "Theme",
+    "endpoint": "themes",
+    "actions": [
+      "index",
+      "show",
+      "create",
+      "update",
+      "destroy"
+    ]
+  },
+  {
+    "name": "Transaction",
+    "endpoint": "transactions",
+    "actions": [
+      "index",
+      "count",
+      "show",
+      "create"
+    ]
+  },
+  {
+    "name": "User",
+    "endpoint": "users",
+    "actions": [
+      "index",
+      "show"
+    ]
+  },
+  {
+    "name": "Webhook",
+    "endpoint": "webhooks",
+    "actions": [
+      "index",
+      "count",
+      "show",
+      "create",
+      "update",
+      "destroy"
+    ]
+  }
+]
