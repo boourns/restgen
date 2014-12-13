@@ -4,7 +4,7 @@ Code that writes code for writing code.
 
 Generate statically-typed bindings for your REST API in Go.
 
-Currently only implemented enough to generate github.com/boourns/go_shopify.  Not sure what'd be necessary to support more REST APIs.
+Currently only implemented enough to generate https://github.com/boourns/go_shopify.  Not sure what'd be necessary to support more REST APIs.
 
 Basic usage, for example to generate Shopify's API:
 ```
