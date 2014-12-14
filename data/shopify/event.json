@@ -1,0 +1,1 @@
+{"arguments":["'alert(lol);"],"body":null,"created_at":"2014-12-03T12:17:18-05:00","id":2980125588,"subject_id":389374712,"subject_type":"Product","verb":"create","message":"created a new product: <a href=\"/admin/products/389374712\">&#39;alert(lol);</a>.","author":"Joe Smith","description":null,"path":"/admin/products/389374712"}

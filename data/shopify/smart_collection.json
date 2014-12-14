@@ -1,0 +1,1 @@
+{"body_html":"<p>&nbsp;asdf</p>","disjunctive":false,"handle":"quantity-0","id":9083750,"published_at":"2013-02-03T12:50:29-05:00","published_scope":"global","sort_order":"alpha-desc","template_suffix":null,"title":"quantity > 0","updated_at":"2014-12-03T12:22:27-05:00","rules":[{"column":"variant_inventory","relation":"greater_than","condition":"1"}]}

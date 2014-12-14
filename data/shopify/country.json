@@ -1,0 +1,1 @@
+{"code":"*","id":5695546,"name":"Rest of World","tax":0.05,"tax_name":"VAT","provinces":[],"weight_based_shipping_rates":[{"country_id":5695546,"id":10464996,"name":"International Shipping","price":"20.00","weight_high":20.0,"weight_low":0.0,"offsets":[]}],"price_based_shipping_rates":[],"carrier_shipping_rate_providers":[]}
